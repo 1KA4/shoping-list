@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../img/fruit.jpg);
+    background-size: cover;
+}
+
+.shopping-list{
+    width: 500px;
+    margin: 100px auto;
+    background-color: #F9F4F4;
+}
+#header{
+    background-color: #7D8A2E;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    color: white;
+    font-weight: normal;
+}
+#header span{
+    float: right;
+}
+#addItem{
+    width: 100%;
+    color: #808080;
+    font-size: 20px;
+    background-color: #F9F4F4;
+    padding: 15px;
+    box-sizing: border-box;
+    border-style: none;
+}
+.done{
+    text-decoration: line-through;
+}
+
+#addItem:focus {
+    background-color: white;
+    border: 2px solid #7D8A2E;;
+    outline: none;
+}
+
+#itemList{
+    list-style: none;
+}
+
+.item{
+    height: 50px;
+    border-top: 1px solid white;
+    color: #808080;
+    font-size: 20px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+.backspace{
+    float: right;
+    background-color: red;
+    height: 100%;
+    width: 0;
+    text-align: center;
+    color: white;
+    display: none;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.item:hover .backspace{
+    width: 50px;
+    opacity: 1;
+    display: block;
+}
+
+
